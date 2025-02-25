@@ -1,0 +1,75 @@
+.postcard {
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .postcard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .postcard.light {
+    background-color: white;
+    color: #333;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .postcard.light:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .postcard.dark {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .postcard.dark:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .postcard-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+  }
+  
+  .postcard.light .avatar {
+    border-color: #eaeaea;
+  }
+  
+  .postcard.dark .avatar {
+    border-color: #444;
+  }
+  
+  .user-name {
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .comment {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .postcard.light .comment {
+    color: #555;
+  }
+  
+  .postcard.dark .comment {
+    color: #ccc;
+  }
+  
